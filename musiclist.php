@@ -23,7 +23,7 @@ $musics = getMusic();
             <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">music</p>
         </a>
         <a href="booklist.php" style="float: left;">
-            <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">books</p>
+            <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">communication tech</p>
         </a>
         <a href="movielist.php" style="float: left;">
             <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">movies</p>

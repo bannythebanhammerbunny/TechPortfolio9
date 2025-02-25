@@ -23,7 +23,7 @@ $books = getBook();
             <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">music</p>
         </a>
         <a href="booklist.php" style="float: left;">
-            <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">books</p>
+            <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">communication tech</p>
         </a>
         <a href="movielist.php" style="float: left;">
             <p style="color: #FFFFFF; float: left; margin-left: 5vw; font-size: 35px;">movies</p>
@@ -35,25 +35,34 @@ $books = getBook();
         
     <table style="border-collapse: collapse; width: 100%;">
             <tr>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">id</th>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Name</th>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Author</th>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">length</th>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">rating</th>
-                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">edit data</th>
+                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Photo</th>
+                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Subject</th>
+                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Uses rule of thirds?</th>
+                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">Shot type</th>
+                <th style="border: 1px solid #202020; text-align: center; padding: 8px;">How is attention gathered?</th>
             </tr>
-            <?php while ($book = mysqli_fetch_assoc($books)) { ?>
                 <tr>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><?php echo $book['id']; ?></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><?php echo $book['name']; ?></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><?php echo $book['a_name']; ?></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><?php echo $book['length']; ?></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><?php echo $book['rating']; ?></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><a href = "editData.php?id=<?php echo $book['id']."_0"; ?>">edit this row</a></td>
-                    <td style="border: 1px solid #202020; text-align: center; padding: 8px; width:50px"><a href = "deleteData.php?id=<?php echo $book['id']."_0"; ?>"><img src="img/evilCarWash.png" style="width: 100%"></a></td>
-            <?php } ?>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><img src="img/IMG_0446.png" width="250"></td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">canada flag, martin luthor king portrait</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">yes</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">extra wide shot</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">the intersection garnered form the rule of theirs may draw attention to the subjects, and more.</td>
+                    </tr>
+                    <tr>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><img src="img/IMG_0449.png" width="250"></td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">the red ball, with a white tube "body"</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">no</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">medium close-up</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">the subject is dead center, and contrasts surrounding colors.</td>
+                    </tr>
+                    <tr>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;"><img src="img/IMG_0450.png" width="250"></td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">syringe</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">yes</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">wide shot</td>
+                    <td style="border: 1px solid #202020; text-align: center; padding: 8px;">the intersection garnered form the rule of thirds may draw attention to the subject.</td>
+                    </tr>
         </table>
-        <a href="insertData.php?id=0"><img src="img/walterBlanco.jpg" alt="water write"></a>
     </main>
     <footer>
 
